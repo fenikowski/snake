@@ -1,0 +1,179 @@
+body:after {
+  content: url(../img/cookie.png) url(../img/potato.png)
+    url(../img/potatoClosed.png) url(../img/potatoClosed1.png)
+    url(../img/potatoEating1.png) url(../img/potatoEating3.png)
+    url(../img/potatoEating2.png) url(../img/potatoEatingDoGifa.png)
+    url(../img/yummy.gif);
+  display: none;
+}
+
+.displayNone {
+  display: none;
+}
+
+div.start {
+  display: none;
+  position: fixed;
+  top: 7vh;
+  left: 0;
+  height: 93vh;
+  width: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1;
+  transition: 2s;
+}
+
+div.startOn {
+  display: block;
+  opacity: 0.8;
+}
+
+div.startInfo {
+  display: none;
+  height: 70%;
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--mainFont);
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+}
+
+div.startInfo p:nth-of-type(1) {
+  display: block;
+}
+
+div.startInfo p:nth-of-type(2) {
+  font-size: 70px;
+  color: lightgreen;
+}
+
+div.startInfoOn {
+  display: block;
+  opacity: 1;
+}
+
+div.blurOn {
+  display: block;
+  filter: blur(5px);
+}
+
+button:focus {
+  border: none;
+  outline: none !important;
+}
+
+button.startBtn {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+button.startBtn i {
+  margin: 0 15px 0 0;
+}
+
+button.musicBtn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  padding: 5px 5px;
+  left: 23%;
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+button.musicBtn i {
+  margin: 0 15px 0 0;
+  display: block;
+}
+
+button.musicBtn i:nth-of-type(2) {
+  display: none;
+}
+
+button.horrorBtn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  padding: 5px 5px;
+  left: 43%;
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+button.horrorBtn i {
+  margin: 0 15px 0 0;
+  display: block;
+}
+
+button.horrorBtn i:nth-of-type(2) {
+  display: none;
+}
+
+button.speedBtn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  padding: 5px 5px;
+  left: 63%;
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+button.speedBtn i {
+  margin: 0 15px 0 0;
+  display: block;
+  /* color: yellowgreen; */
+}
+
+button.speedBtn i:nth-of-type(2) {
+  display: none;
+  /* color: red; */
+}
+
+button.speedBtn i:nth-of-type(3) {
+  display: none;
+  /* color: pink; */
+}
+
+@media (max-width: 1000px) {
+  div.startInfo {
+    top: 40%;
+  }
+
+  button.startBtn {
+    top: 110%;
+  }
+
+  button.horrorBtn {
+    top: 75%;
+  }
+
+  button.musicBtn {
+    top: 75%;
+    left: 13%;
+  }
+
+  button.speedBtn {
+    top: 75%;
+    left: 73%;
+  }
+}

@@ -1,0 +1,87 @@
+div.blurOn {
+    filter: blur(5px);
+}
+
+div.gameOver {
+    display: none;
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    height: 93vh;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+    transition: 2s;
+}
+
+div.gameOverOn {
+    display: block;
+    opacity: 0.7;
+}
+
+div.gameOverInfo {
+    display: none;
+    height: 70%;
+    width: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: var(--mainFont);
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+}
+
+div.gameOverInfo p:nth-of-type(1) {
+    display: block;
+}
+
+div.gameOverInfo p:nth-of-type(2) {
+    font-size: 70px;
+    color: lightgreen;
+}
+
+div.gameOverInfo p:nth-of-type(3) {
+    font-size: 70px;
+    color: lightgreen;
+}
+
+div.gameOverInfoOn {
+    display: block;
+    opacity: 1;
+}
+
+div.gameOverInfo i {
+    transition: 1s;
+    display: inline-block;
+    margin: 30px 20px;
+    font-size: 100px;
+    color: white;
+}
+
+div.gameOverInfo i:nth-of-type(2) {
+    font-size: 125px;
+    transform: translate(0, 7%);
+}
+
+div.gameOverInfo i:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    div.gameOverInfo {
+        top: 43%;
+    }
+}
+
+
+@media all and (display-mode: fullscreen) {
+    div.gameOverInfo {
+        top: 55%;
+    }
+}

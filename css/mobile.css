@@ -1,0 +1,247 @@
+div.turnMobileInfo {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    word-wrap: break-word;
+    font-family: arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 50% 0;
+}
+
+div.turnMobileInfo>i {
+    font-size: 70px;
+    margin-top: 25px;
+    animation: turningPhone 1s infinite;
+}
+
+@keyframes turningPhone {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+div.scrollUp {
+    display: none;
+}
+
+div.scrollUpInfo {
+    display: none
+}
+
+.leftBtn,
+.rightBtn {
+    display: none;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 0, 0, 0.7);
+    border-radius: 50px;
+    position: fixed;
+    top: 51%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    text-align: center;
+}
+
+.rightBtn {
+    left: 88%;
+}
+
+.leftBtn i,
+.rightBtn i {
+    margin: 29px;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.2);
+}
+
+.leftBtn:active,
+.rightBtn:active {
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 0 7px black, 0 0 0 14px red;
+}
+
+@media (max-width: 680px) and (orientation: portrait) {
+    div.turnMobileInfo {
+        display: block;
+    }
+}
+
+@media (max-width: 680px) and (orientation: landscape) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header p {
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    header img {
+        left: 49.5%;
+    }
+
+    div.board {
+        height: 85vh;
+        width: 85vh;
+        transform: translate(0, -5%)
+    }
+
+    div.score {
+        display: none;
+    }
+
+    div.startInfo {
+        font-size: 50px;
+        left: 50%;
+        top: 48%;
+    }
+
+    div.startInfo p:nth-of-type(2) {
+        font-size: 30px;
+    }
+
+    button.musicBtn {
+        top: 42%;
+        left: 8%;
+        font-size: 35px;
+    }
+
+    button.horrorBtn {
+        top: 42%;
+        left: 38%;
+        font-size: 35px;
+    }
+
+    button.speedBtn {
+        top: 42%;
+        left: 68%;
+        font-size: 35px;
+    }
+
+    button.startBtn {
+        top: 85%;
+        left: 32%;
+        font-size: 40px;
+    }
+
+    div.gameOverInfo {
+        font-size: 50px;
+        top: 53%;
+    }
+
+    div.gameOverInfo p:nth-of-type(2) {
+        font-size: 30px;
+    }
+
+    div.gameOverInfo p:nth-of-type(3) {
+        font-size: 30px;
+    }
+
+    div.gameOverInfo i {
+        transition: 1s;
+        display: inline-block;
+        margin: 30px 20px;
+        font-size: 50px;
+        color: white;
+    }
+
+    div.gameOverInfo i:nth-of-type(2) {
+        font-size: 62.5px;
+        transform: translate(0, 7%);
+    }
+
+    .leftBtn,
+    .rightBtn {
+        display: block;
+    }
+
+    div.scrollUp {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        bottom: 20px;
+        right: 20px;
+        /* box-sizing: border-box; */
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        border-style: none;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+        transition: .2s;
+        cursor: pointer;
+        text-align: center;
+        animation: disappear 5s;
+        animation-fill-mode: both;
+    }
+
+
+    div.scrollUp i {
+        text-shadow: 0 -20px 0 white, 0 -40px 0 white;
+        transform: translateY(92px);
+        animation: arrow 1s linear infinite;
+    }
+
+    div.scrollUp:hover i {
+        animation-duration: .7s;
+    }
+
+    div.scrollUpInfo {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 70px;
+        z-index: 2;
+        color: whitesmoke;
+        font-family: arial;
+        text-align: right;
+        font-weight: 200;
+        animation: disappear 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes arrow {
+        100% {
+            transform: translateY(-50px)
+        }
+    }
+}

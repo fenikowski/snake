@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Snake - The Game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/gameOver.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div class="turnMobileInfo">Please turn your phone to horizontal position<br><i class="fas fa-sync-alt"></i></div>
+    <div class="scrollUpInfo">Scroll up <br>for fullscreen</div>
+    <div class="scrollUp"><i class="fas fa-angle-up"></i></div>
+    <div data-side="left" class="leftBtn"><i class="fas fa-arrow-left"></i></div>
+    <div data-side="right" class="rightBtn"><i class="fas fa-arrow-right"></i></div>
+    <div class="start"></div>
+    <div class="startInfo">
+        <p>Welcome !</p>
+        <p>Please select your settings</p>
+        <button class="startBtn"><i class="fas fa-play"></i>Play</button>
+        <button class="horrorBtn">Mode<i class="fas fa-baby"></i><i class="fas fa-spider"></i></button>
+        <button class="speedBtn">Speed<i class="fas fa-dog"></i><i class="fas fa-rocket"></i><i
+                class="fas fa-kiwi-bird"></i></button>
+        <button class="musicBtn">Music<i class="fas fa-volume-mute"></i><i class="fas fa-volume-up"></i></button>
+    </div>
+    <div class="gameOver"></div>
+    <div class="gameOverInfo">
+        <p>GAME OVER !!!</p>
+        <p>Eaten cookies: </p>
+        <p>0</p>
+        <i class="fas fa-redo"></i>
+        <i class="fas fa-times"></i>
+    </div>
+    <header class="starting">
+        <p>SN</p>
+        <p>KE</p>
+        <img src="img/yummy.gif" alt="">
+    </header>
+    <div class="wrap">
+        <div class="controls">
+            <p>Controls</p>
+            <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="board">
+            <div class="position1"></div>
+            <div class="position2"></div>
+            <div class="position3"></div>
+            <div class="position4"></div>
+            <div class="position5"></div>
+            <div class="position6"></div>
+            <div class="position7"></div>
+            <div class="position8"></div>
+            <div class="position9"></div>
+            <div class="position10"></div>
+            <div class="position11"></div>
+            <div class="position12"></div>
+            <div class="position13"></div>
+            <div class="position14"></div>
+            <div class="position15"></div>
+            <div class="position16"></div>
+            <div class="position17"></div>
+            <div class="position18"></div>
+            <div class="position19"></div>
+            <div class="position20"></div>
+            <div class="position21"></div>
+            <div class="position22"></div>
+            <div class="position23"></div>
+            <div class="position24"></div>
+            <div class="position25"></div>
+            <div class="position26"></div>
+            <div class="position27"></div>
+            <div class="position28"></div>
+            <div class="position29"></div>
+            <div class="position30"></div>
+            <div class="position31"></div>
+            <div class="position32"></div>
+            <div class="position33"></div>
+            <div class="position34"></div>
+            <div class="position35"></div>
+            <div class="position36"></div>
+            <div class="position37"></div>
+            <div class="position38"></div>
+            <div class="position39"></div>
+            <div class="position40"></div>
+            <div class="position41"></div>
+            <div class="position42"></div>
+            <div class="position43"></div>
+            <div class="position44"></div>
+            <div class="position45"></div>
+            <div class="position46"></div>
+            <div class="position47"></div>
+            <div class="position48"></div>
+            <div class="position49"></div>
+            <div class="position50"></div>
+            <div class="position51"></div>
+            <div class="position52"></div>
+            <div class="position53"></div>
+            <div class="position54"></div>
+            <div class="position55"></div>
+            <div class="position56"></div>
+            <div class="position57"></div>
+            <div class="position58"></div>
+            <div class="position59"></div>
+            <div class="position60"></div>
+            <div class="position61"></div>
+            <div class="position62"></div>
+            <div class="position63"></div>
+            <div class="position64"></div>
+            <div class="position65"></div>
+            <div class="position66"></div>
+            <div class="position67"></div>
+            <div class="position68"></div>
+            <div class="position69"></div>
+            <div class="position70"></div>
+            <div class="position71"></div>
+            <div class="position72"></div>
+            <div class="position73"></div>
+            <div class="position74"></div>
+            <div class="position75"></div>
+            <div class="position76"></div>
+            <div class="position77"></div>
+            <div class="position78"></div>
+            <div class="position79"></div>
+            <div class="position80"></div>
+            <div class="position81"></div>
+            <div class="position82"></div>
+            <div class="position83"></div>
+            <div class="position84"></div>
+            <div class="position85"></div>
+            <div class="position86"></div>
+            <div class="position87"></div>
+            <div class="position88"></div>
+            <div class="position89"></div>
+            <div class="position90"></div>
+            <div class="position91"></div>
+            <div class="position92"></div>
+            <div class="position93"></div>
+            <div class="position94"></div>
+            <div class="position95"></div>
+            <div class="position96"></div>
+            <div class="position97"></div>
+            <div class="position98"></div>
+            <div class="position99"></div>
+            <div class="position100"></div>
+        </div>
+        <div class="score">
+            <p>Cookies eaten:</p>
+        </div>
+    </div>
+
+    <script src="javaScript/buttons&options.js"></script>
+    <script src="javaScript/start.js"></script>
+    <script src="javaScript/script.js"></script>
+</body>
+
+</html>
